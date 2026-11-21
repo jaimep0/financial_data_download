@@ -26,7 +26,7 @@ A single CSV dataset (`data.csv`) containing financial information for multiple 
 ## Usage
 
 ```python
-df = extract_data(tickers, n=250)
+df = extract_data(tickers)
 ```
 
 ## Project Scope
