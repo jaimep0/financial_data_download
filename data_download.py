@@ -210,9 +210,6 @@ def extract_data(tickers, verbose=True):
 
     df = df.reset_index(drop=True)
 
-    # 6. Save one CSV in the current directory
-    df.to_csv("data.csv", index=False)
-
     if verbose:
         print("\nExtraction completed")
         print(f"Observations: {len(df):,}")
