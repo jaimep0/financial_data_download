@@ -223,24 +223,4 @@ def extract_data(tickers, verbose=True):
     return df
 
 
-# In[3]:
-
-# USAGE
-# Import tickers from json file 
-with open("tickers.json", "r") as file:
-    tickers = json.load(file)
-    
-tickers = pd.DataFrame(tickers["companies"])["ticker"]
-
-# Run extract_data to get a dataframe of financial data
-df = extract_data(tickers)
-
-
-# In[4]:
-
-
-print(df.shape)
-
-# save df
-df.to_csv("data.csv")
 
